@@ -1,33 +1,43 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class TilemapVisualizer : MonoBehaviour
+namespace ProceduralDungeonGeneration
 {
-    [SerializeField] private Tilemap _floorTilemap;
-    [SerializeField] private TileBase _floorTile;
-
-    public void PaintFloorTiles(IEnumerable<Vector2Int> floorPositions)
+    public class TilemapVisualizer : MonoBehaviour
     {
-        PaintTiles(floorPositions, _floorTilemap, _floorTile);
-    }
+        [SerializeField] private Tilemap _floorTilemap, _wallTilemap;
+        [SerializeField] private TileBase _floorTile, _wallTop;
 
-    public void Clear()
-    {
-        _floorTilemap.ClearAllTiles();
-    }
-
-    private void PaintTiles(IEnumerable<Vector2Int> positions, Tilemap tilemap, TileBase tile)
-    {
-        foreach (var position in positions)
+        public void PaintFloorTiles(IEnumerable<Vector2Int> floorPositions)
         {
-            PaintSingleTile(position, tilemap, tile);
+            PaintTiles(floorPositions, _floorTilemap, _floorTile);
         }
-    }
 
-    private void PaintSingleTile(Vector2Int position, Tilemap tilemap, TileBase tile)
-    {
-        var tilePosition = tilemap.WorldToCell((Vector3Int)position);
-        tilemap.SetTile(tilePosition, tile);
+        public void Clear()
+        {
+            _floorTilemap.ClearAllTiles();
+            _wallTilemap.ClearAllTiles();
+        }
+
+        private void PaintTiles(IEnumerable<Vector2Int> positions, Tilemap tilemap, TileBase tile)
+        {
+            foreach (var position in positions)
+            {
+                PaintSingleTile(position, tilemap, tile);
+            }
+        }
+
+        private void PaintSingleTile(Vector2Int position, Tilemap tilemap, TileBase tile)
+        {
+            var tilePosition = tilemap.WorldToCell((Vector3Int)position);
+            tilemap.SetTile(tilePosition, tile);
+        }
+
+        internal void PaintSingleBasicWall(Vector2Int position)
+        {
+            PaintSingleTile(position, _wallTilemap, _wallTop);
+        }
     }
 }

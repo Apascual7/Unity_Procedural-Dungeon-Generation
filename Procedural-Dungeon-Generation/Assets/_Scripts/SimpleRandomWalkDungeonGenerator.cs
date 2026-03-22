@@ -4,33 +4,29 @@ using UnityEngine;
 
 namespace ProceduralDungeonGeneration
 {
-    public class SimpleRandomWalkDungeonGenerator : MonoBehaviour
+    public class SimpleRandomWalkDungeonGenerator : AbstractDungeonGenerator
     {
-        [SerializeField] protected Vector2Int startPosition = Vector2Int.zero;
-        [SerializeField] private int _iterations = 10;
-        [SerializeField] private TilemapVisualizer _tilemapVisualizer;
+        [SerializeField] protected SimpleRandomWalkSO randomWalkParameters;
 
-        public int walkLength = 10;
-        public bool startRandomlyEachIteration = true;
-
-        public void RunProceduralGeneration()
+        protected override void RunProceduralGeneration()
         {
-            HashSet<Vector2Int> floorPositions = RunRandomWalk();
-            _tilemapVisualizer.Clear();
-            _tilemapVisualizer.PaintFloorTiles(floorPositions);
+            HashSet<Vector2Int> floorPositions = RunRandomWalk(randomWalkParameters, startPosition);
+            tilemapVisualizer.Clear();
+            tilemapVisualizer.PaintFloorTiles(floorPositions);
+            WallGenerator.CreateWalls(floorPositions, tilemapVisualizer);
         }
 
-        protected HashSet<Vector2Int> RunRandomWalk()
+        protected HashSet<Vector2Int> RunRandomWalk(SimpleRandomWalkSO parameters, Vector2Int position)
         {
-            var currentPosition = startPosition;
+            var currentPosition = position;
             HashSet<Vector2Int> floorPositions = new HashSet<Vector2Int>();
 
-            for (int i = 0; i < _iterations; i++)
+            for (int i = 0; i < parameters.iterations; i++)
             {
-                var path = ProceduralGenerationAlgorithms.SimpleRandomWalk(currentPosition, walkLength);
+                var path = ProceduralGenerationAlgorithms.SimpleRandomWalk(currentPosition, parameters.walkLength);
                 floorPositions.UnionWith(path);
 
-                if (startRandomlyEachIteration)
+                if (parameters.startRandomlyEachIteration)
                 {
                     currentPosition = floorPositions.ElementAt(Random.Range(0, floorPositions.Count));
                 }
