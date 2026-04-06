@@ -1,0 +1,1113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c35898809db2cc748a825f4492f1b93c, type: 3}
+  m_Name: Room1
+  m_EditorClassIdentifier: Assembly-CSharp::RoomData
+  size: {x: 14, y: 13}
+  floorTiles:
+  - position: {x: -7, y: -6}
+    tile: {fileID: 0}
+  - position: {x: -6, y: -6}
+    tile: {fileID: 0}
+  - position: {x: -5, y: -6}
+    tile: {fileID: 0}
+  - position: {x: -4, y: -6}
+    tile: {fileID: 0}
+  - position: {x: -3, y: -6}
+    tile: {fileID: 0}
+  - position: {x: -2, y: -6}
+    tile: {fileID: 0}
+  - position: {x: -1, y: -6}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 0, y: -6}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 1, y: -6}
+    tile: {fileID: 0}
+  - position: {x: 2, y: -6}
+    tile: {fileID: 0}
+  - position: {x: 3, y: -6}
+    tile: {fileID: 0}
+  - position: {x: 4, y: -6}
+    tile: {fileID: 0}
+  - position: {x: 5, y: -6}
+    tile: {fileID: 0}
+  - position: {x: 6, y: -6}
+    tile: {fileID: 0}
+  - position: {x: -7, y: -5}
+    tile: {fileID: 0}
+  - position: {x: -6, y: -5}
+    tile: {fileID: 0}
+  - position: {x: -5, y: -5}
+    tile: {fileID: 0}
+  - position: {x: -4, y: -5}
+    tile: {fileID: 0}
+  - position: {x: -3, y: -5}
+    tile: {fileID: 0}
+  - position: {x: -2, y: -5}
+    tile: {fileID: 0}
+  - position: {x: -1, y: -5}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 0, y: -5}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 1, y: -5}
+    tile: {fileID: 0}
+  - position: {x: 2, y: -5}
+    tile: {fileID: 0}
+  - position: {x: 3, y: -5}
+    tile: {fileID: 0}
+  - position: {x: 4, y: -5}
+    tile: {fileID: 0}
+  - position: {x: 5, y: -5}
+    tile: {fileID: 0}
+  - position: {x: 6, y: -5}
+    tile: {fileID: 0}
+  - position: {x: -7, y: -4}
+    tile: {fileID: 0}
+  - position: {x: -6, y: -4}
+    tile: {fileID: 0}
+  - position: {x: -5, y: -4}
+    tile: {fileID: 0}
+  - position: {x: -4, y: -4}
+    tile: {fileID: 0}
+  - position: {x: -3, y: -4}
+    tile: {fileID: 0}
+  - position: {x: -2, y: -4}
+    tile: {fileID: 0}
+  - position: {x: -1, y: -4}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 0, y: -4}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 1, y: -4}
+    tile: {fileID: 0}
+  - position: {x: 2, y: -4}
+    tile: {fileID: 0}
+  - position: {x: 3, y: -4}
+    tile: {fileID: 0}
+  - position: {x: 4, y: -4}
+    tile: {fileID: 0}
+  - position: {x: 5, y: -4}
+    tile: {fileID: 0}
+  - position: {x: 6, y: -4}
+    tile: {fileID: 0}
+  - position: {x: -7, y: -3}
+    tile: {fileID: 0}
+  - position: {x: -6, y: -3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -5, y: -3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -4, y: -3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -3, y: -3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -2, y: -3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -1, y: -3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 0, y: -3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 1, y: -3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 2, y: -3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 3, y: -3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 4, y: -3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 5, y: -3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 6, y: -3}
+    tile: {fileID: 0}
+  - position: {x: -7, y: -2}
+    tile: {fileID: 0}
+  - position: {x: -6, y: -2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -5, y: -2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -4, y: -2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -3, y: -2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -2, y: -2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -1, y: -2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 0, y: -2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 1, y: -2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 2, y: -2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 3, y: -2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 4, y: -2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 5, y: -2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 6, y: -2}
+    tile: {fileID: 0}
+  - position: {x: -7, y: -1}
+    tile: {fileID: 0}
+  - position: {x: -6, y: -1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -5, y: -1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -4, y: -1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -3, y: -1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -2, y: -1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -1, y: -1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 0, y: -1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 1, y: -1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 2, y: -1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 3, y: -1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 4, y: -1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 5, y: -1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 6, y: -1}
+    tile: {fileID: 0}
+  - position: {x: -7, y: 0}
+    tile: {fileID: 0}
+  - position: {x: -6, y: 0}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -5, y: 0}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -4, y: 0}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -3, y: 0}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -2, y: 0}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -1, y: 0}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 0, y: 0}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 1, y: 0}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 2, y: 0}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 3, y: 0}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 4, y: 0}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 5, y: 0}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 6, y: 0}
+    tile: {fileID: 0}
+  - position: {x: -7, y: 1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -6, y: 1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -5, y: 1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -4, y: 1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -3, y: 1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -2, y: 1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -1, y: 1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 0, y: 1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 1, y: 1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 2, y: 1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 3, y: 1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 4, y: 1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 5, y: 1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 6, y: 1}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -7, y: 2}
+    tile: {fileID: 0}
+  - position: {x: -6, y: 2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -5, y: 2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -4, y: 2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -3, y: 2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -2, y: 2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -1, y: 2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 0, y: 2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 1, y: 2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 2, y: 2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 3, y: 2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 4, y: 2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 5, y: 2}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 6, y: 2}
+    tile: {fileID: 0}
+  - position: {x: -7, y: 3}
+    tile: {fileID: 0}
+  - position: {x: -6, y: 3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -5, y: 3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -4, y: 3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -3, y: 3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -2, y: 3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: -1, y: 3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 0, y: 3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 1, y: 3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 2, y: 3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 3, y: 3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 4, y: 3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 5, y: 3}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 6, y: 3}
+    tile: {fileID: 0}
+  - position: {x: -7, y: 4}
+    tile: {fileID: 0}
+  - position: {x: -6, y: 4}
+    tile: {fileID: 0}
+  - position: {x: -5, y: 4}
+    tile: {fileID: 0}
+  - position: {x: -4, y: 4}
+    tile: {fileID: 0}
+  - position: {x: -3, y: 4}
+    tile: {fileID: 0}
+  - position: {x: -2, y: 4}
+    tile: {fileID: 0}
+  - position: {x: -1, y: 4}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 0, y: 4}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 1, y: 4}
+    tile: {fileID: 0}
+  - position: {x: 2, y: 4}
+    tile: {fileID: 0}
+  - position: {x: 3, y: 4}
+    tile: {fileID: 0}
+  - position: {x: 4, y: 4}
+    tile: {fileID: 0}
+  - position: {x: 5, y: 4}
+    tile: {fileID: 0}
+  - position: {x: 6, y: 4}
+    tile: {fileID: 0}
+  - position: {x: -7, y: 5}
+    tile: {fileID: 0}
+  - position: {x: -6, y: 5}
+    tile: {fileID: 0}
+  - position: {x: -5, y: 5}
+    tile: {fileID: 0}
+  - position: {x: -4, y: 5}
+    tile: {fileID: 0}
+  - position: {x: -3, y: 5}
+    tile: {fileID: 0}
+  - position: {x: -2, y: 5}
+    tile: {fileID: 0}
+  - position: {x: -1, y: 5}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 0, y: 5}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 1, y: 5}
+    tile: {fileID: 0}
+  - position: {x: 2, y: 5}
+    tile: {fileID: 0}
+  - position: {x: 3, y: 5}
+    tile: {fileID: 0}
+  - position: {x: 4, y: 5}
+    tile: {fileID: 0}
+  - position: {x: 5, y: 5}
+    tile: {fileID: 0}
+  - position: {x: 6, y: 5}
+    tile: {fileID: 0}
+  - position: {x: -7, y: 6}
+    tile: {fileID: 0}
+  - position: {x: -6, y: 6}
+    tile: {fileID: 0}
+  - position: {x: -5, y: 6}
+    tile: {fileID: 0}
+  - position: {x: -4, y: 6}
+    tile: {fileID: 0}
+  - position: {x: -3, y: 6}
+    tile: {fileID: 0}
+  - position: {x: -2, y: 6}
+    tile: {fileID: 0}
+  - position: {x: -1, y: 6}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 0, y: 6}
+    tile: {fileID: 11400000, guid: 89cd360a72439cd47b6f7610b96754e0, type: 2}
+  - position: {x: 1, y: 6}
+    tile: {fileID: 0}
+  - position: {x: 2, y: 6}
+    tile: {fileID: 0}
+  - position: {x: 3, y: 6}
+    tile: {fileID: 0}
+  - position: {x: 4, y: 6}
+    tile: {fileID: 0}
+  - position: {x: 5, y: 6}
+    tile: {fileID: 0}
+  - position: {x: 6, y: 6}
+    tile: {fileID: 0}
+  wallTiles:
+  - position: {x: -7, y: -6}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: -6, y: -6}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: -5, y: -6}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: -4, y: -6}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: -3, y: -6}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: -2, y: -6}
+    tile: {fileID: 11400000, guid: 81e6b4ad007f15543a3cc6cd46115763, type: 2}
+  - position: {x: -1, y: -6}
+    tile: {fileID: 0}
+  - position: {x: 0, y: -6}
+    tile: {fileID: 0}
+  - position: {x: 1, y: -6}
+    tile: {fileID: 11400000, guid: f6a71489e1d4eae43b32d08084badf5f, type: 2}
+  - position: {x: 2, y: -6}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: 3, y: -6}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: 4, y: -6}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: 5, y: -6}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: 6, y: -6}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: -7, y: -5}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: -6, y: -5}
+    tile: {fileID: 11400000, guid: 6776a71fa80bef041bfc332133b73629, type: 2}
+  - position: {x: -5, y: -5}
+    tile: {fileID: 0}
+  - position: {x: -4, y: -5}
+    tile: {fileID: 0}
+  - position: {x: -3, y: -5}
+    tile: {fileID: 0}
+  - position: {x: -2, y: -5}
+    tile: {fileID: 0}
+  - position: {x: -1, y: -5}
+    tile: {fileID: 0}
+  - position: {x: 0, y: -5}
+    tile: {fileID: 0}
+  - position: {x: 1, y: -5}
+    tile: {fileID: 0}
+  - position: {x: 2, y: -5}
+    tile: {fileID: 0}
+  - position: {x: 3, y: -5}
+    tile: {fileID: 0}
+  - position: {x: 4, y: -5}
+    tile: {fileID: 0}
+  - position: {x: 5, y: -5}
+    tile: {fileID: 11400000, guid: 46c3132736185314384d362ec625a108, type: 2}
+  - position: {x: 6, y: -5}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: -7, y: -4}
+    tile: {fileID: 11400000, guid: 870ff2f85ddf21146b26e549eceb6bf3, type: 2}
+  - position: {x: -6, y: -4}
+    tile: {fileID: 11400000, guid: 6776a71fa80bef041bfc332133b73629, type: 2}
+  - position: {x: -5, y: -4}
+    tile: {fileID: 0}
+  - position: {x: -4, y: -4}
+    tile: {fileID: 0}
+  - position: {x: -3, y: -4}
+    tile: {fileID: 0}
+  - position: {x: -2, y: -4}
+    tile: {fileID: 0}
+  - position: {x: -1, y: -4}
+    tile: {fileID: 0}
+  - position: {x: 0, y: -4}
+    tile: {fileID: 0}
+  - position: {x: 1, y: -4}
+    tile: {fileID: 0}
+  - position: {x: 2, y: -4}
+    tile: {fileID: 0}
+  - position: {x: 3, y: -4}
+    tile: {fileID: 0}
+  - position: {x: 4, y: -4}
+    tile: {fileID: 0}
+  - position: {x: 5, y: -4}
+    tile: {fileID: 11400000, guid: 46c3132736185314384d362ec625a108, type: 2}
+  - position: {x: 6, y: -4}
+    tile: {fileID: 11400000, guid: b503b6564ff266247a0cb08b1ee3307e, type: 2}
+  - position: {x: -7, y: -3}
+    tile: {fileID: 11400000, guid: 81e6b4ad007f15543a3cc6cd46115763, type: 2}
+  - position: {x: -6, y: -3}
+    tile: {fileID: 11400000, guid: 3f2730d3588b3ce498bee1a33b69b948, type: 2}
+  - position: {x: -5, y: -3}
+    tile: {fileID: 0}
+  - position: {x: -4, y: -3}
+    tile: {fileID: 0}
+  - position: {x: -3, y: -3}
+    tile: {fileID: 0}
+  - position: {x: -2, y: -3}
+    tile: {fileID: 0}
+  - position: {x: -1, y: -3}
+    tile: {fileID: 0}
+  - position: {x: 0, y: -3}
+    tile: {fileID: 0}
+  - position: {x: 1, y: -3}
+    tile: {fileID: 0}
+  - position: {x: 2, y: -3}
+    tile: {fileID: 0}
+  - position: {x: 3, y: -3}
+    tile: {fileID: 0}
+  - position: {x: 4, y: -3}
+    tile: {fileID: 0}
+  - position: {x: 5, y: -3}
+    tile: {fileID: 11400000, guid: 6773f7a0daed4344490c9a583e246bab, type: 2}
+  - position: {x: 6, y: -3}
+    tile: {fileID: 11400000, guid: f6a71489e1d4eae43b32d08084badf5f, type: 2}
+  - position: {x: -7, y: -2}
+    tile: {fileID: 11400000, guid: 308b7b0ee15faae47bf7d5db879c282b, type: 2}
+  - position: {x: -6, y: -2}
+    tile: {fileID: 11400000, guid: 32fe842b8ebdd4944888bbb468d1a549, type: 2}
+  - position: {x: -5, y: -2}
+    tile: {fileID: 0}
+  - position: {x: -4, y: -2}
+    tile: {fileID: 0}
+  - position: {x: -3, y: -2}
+    tile: {fileID: 0}
+  - position: {x: -2, y: -2}
+    tile: {fileID: 0}
+  - position: {x: -1, y: -2}
+    tile: {fileID: 0}
+  - position: {x: 0, y: -2}
+    tile: {fileID: 0}
+  - position: {x: 1, y: -2}
+    tile: {fileID: 0}
+  - position: {x: 2, y: -2}
+    tile: {fileID: 0}
+  - position: {x: 3, y: -2}
+    tile: {fileID: 0}
+  - position: {x: 4, y: -2}
+    tile: {fileID: 0}
+  - position: {x: 5, y: -2}
+    tile: {fileID: 11400000, guid: e60b71d6fb2ba0d46859d3513094c880, type: 2}
+  - position: {x: 6, y: -2}
+    tile: {fileID: 11400000, guid: 308b7b0ee15faae47bf7d5db879c282b, type: 2}
+  - position: {x: -7, y: -1}
+    tile: {fileID: 0}
+  - position: {x: -6, y: -1}
+    tile: {fileID: 0}
+  - position: {x: -5, y: -1}
+    tile: {fileID: 0}
+  - position: {x: -4, y: -1}
+    tile: {fileID: 0}
+  - position: {x: -3, y: -1}
+    tile: {fileID: 0}
+  - position: {x: -2, y: -1}
+    tile: {fileID: 0}
+  - position: {x: -1, y: -1}
+    tile: {fileID: 0}
+  - position: {x: 0, y: -1}
+    tile: {fileID: 0}
+  - position: {x: 1, y: -1}
+    tile: {fileID: 0}
+  - position: {x: 2, y: -1}
+    tile: {fileID: 0}
+  - position: {x: 3, y: -1}
+    tile: {fileID: 0}
+  - position: {x: 4, y: -1}
+    tile: {fileID: 0}
+  - position: {x: 5, y: -1}
+    tile: {fileID: 0}
+  - position: {x: 6, y: -1}
+    tile: {fileID: 0}
+  - position: {x: -7, y: 0}
+    tile: {fileID: 11400000, guid: 8053aabecb2c3c34c99d137a404db82c, type: 2}
+  - position: {x: -6, y: 0}
+    tile: {fileID: 11400000, guid: 9568c0c1015268a49bfe87ef08984a96, type: 2}
+  - position: {x: -5, y: 0}
+    tile: {fileID: 0}
+  - position: {x: -4, y: 0}
+    tile: {fileID: 0}
+  - position: {x: -3, y: 0}
+    tile: {fileID: 0}
+  - position: {x: -2, y: 0}
+    tile: {fileID: 0}
+  - position: {x: -1, y: 0}
+    tile: {fileID: 0}
+  - position: {x: 0, y: 0}
+    tile: {fileID: 0}
+  - position: {x: 1, y: 0}
+    tile: {fileID: 0}
+  - position: {x: 2, y: 0}
+    tile: {fileID: 0}
+  - position: {x: 3, y: 0}
+    tile: {fileID: 0}
+  - position: {x: 4, y: 0}
+    tile: {fileID: 0}
+  - position: {x: 5, y: 0}
+    tile: {fileID: 11400000, guid: 8ddafa7db95100e4db385ebcfc57c6b9, type: 2}
+  - position: {x: 6, y: 0}
+    tile: {fileID: 11400000, guid: 24aa303ad5ad07248b22bd3575c6a987, type: 2}
+  - position: {x: -7, y: 1}
+    tile: {fileID: 11400000, guid: b72c86a02f2ad274485546b0be388a81, type: 2}
+  - position: {x: -6, y: 1}
+    tile: {fileID: 11400000, guid: 3f2730d3588b3ce498bee1a33b69b948, type: 2}
+  - position: {x: -5, y: 1}
+    tile: {fileID: 0}
+  - position: {x: -4, y: 1}
+    tile: {fileID: 0}
+  - position: {x: -3, y: 1}
+    tile: {fileID: 0}
+  - position: {x: -2, y: 1}
+    tile: {fileID: 0}
+  - position: {x: -1, y: 1}
+    tile: {fileID: 0}
+  - position: {x: 0, y: 1}
+    tile: {fileID: 0}
+  - position: {x: 1, y: 1}
+    tile: {fileID: 0}
+  - position: {x: 2, y: 1}
+    tile: {fileID: 0}
+  - position: {x: 3, y: 1}
+    tile: {fileID: 0}
+  - position: {x: 4, y: 1}
+    tile: {fileID: 0}
+  - position: {x: 5, y: 1}
+    tile: {fileID: 11400000, guid: 46c3132736185314384d362ec625a108, type: 2}
+  - position: {x: 6, y: 1}
+    tile: {fileID: 11400000, guid: 52d007efe64dbeb4fabe9055944242fc, type: 2}
+  - position: {x: -7, y: 2}
+    tile: {fileID: 11400000, guid: 373560f46858f1042a3a2d96842c6022, type: 2}
+  - position: {x: -6, y: 2}
+    tile: {fileID: 11400000, guid: 3f2730d3588b3ce498bee1a33b69b948, type: 2}
+  - position: {x: -5, y: 2}
+    tile: {fileID: 0}
+  - position: {x: -4, y: 2}
+    tile: {fileID: 0}
+  - position: {x: -3, y: 2}
+    tile: {fileID: 0}
+  - position: {x: -2, y: 2}
+    tile: {fileID: 0}
+  - position: {x: -1, y: 2}
+    tile: {fileID: 0}
+  - position: {x: 0, y: 2}
+    tile: {fileID: 0}
+  - position: {x: 1, y: 2}
+    tile: {fileID: 0}
+  - position: {x: 2, y: 2}
+    tile: {fileID: 0}
+  - position: {x: 3, y: 2}
+    tile: {fileID: 0}
+  - position: {x: 4, y: 2}
+    tile: {fileID: 0}
+  - position: {x: 5, y: 2}
+    tile: {fileID: 11400000, guid: 6773f7a0daed4344490c9a583e246bab, type: 2}
+  - position: {x: 6, y: 2}
+    tile: {fileID: 11400000, guid: ecaf0728fc3f3204b8087edd9287fff6, type: 2}
+  - position: {x: -7, y: 3}
+    tile: {fileID: 11400000, guid: d2ff04822b16a4c4f9d73c35a73e420e, type: 2}
+  - position: {x: -6, y: 3}
+    tile: {fileID: 11400000, guid: fbe5850bd6cb99c4e9cecd4e4ea49b26, type: 2}
+  - position: {x: -5, y: 3}
+    tile: {fileID: 11400000, guid: c3f80278dd9b7ed4bbd9636d85650600, type: 2}
+  - position: {x: -4, y: 3}
+    tile: {fileID: 11400000, guid: c3f80278dd9b7ed4bbd9636d85650600, type: 2}
+  - position: {x: -3, y: 3}
+    tile: {fileID: 11400000, guid: c3f80278dd9b7ed4bbd9636d85650600, type: 2}
+  - position: {x: -2, y: 3}
+    tile: {fileID: 11400000, guid: 5d179e12ed4ca43478453bf3b51fe611, type: 2}
+  - position: {x: -1, y: 3}
+    tile: {fileID: 0}
+  - position: {x: 0, y: 3}
+    tile: {fileID: 0}
+  - position: {x: 1, y: 3}
+    tile: {fileID: 11400000, guid: 21fbf45a980660145ab1c113af5e7405, type: 2}
+  - position: {x: 2, y: 3}
+    tile: {fileID: 11400000, guid: c3f80278dd9b7ed4bbd9636d85650600, type: 2}
+  - position: {x: 3, y: 3}
+    tile: {fileID: 11400000, guid: c3f80278dd9b7ed4bbd9636d85650600, type: 2}
+  - position: {x: 4, y: 3}
+    tile: {fileID: 11400000, guid: c3f80278dd9b7ed4bbd9636d85650600, type: 2}
+  - position: {x: 5, y: 3}
+    tile: {fileID: 11400000, guid: 725fecc7ee534d54e8d04b7c05af421f, type: 2}
+  - position: {x: 6, y: 3}
+    tile: {fileID: 11400000, guid: f2703011760c5a546b6ef78104424571, type: 2}
+  - position: {x: -7, y: 4}
+    tile: {fileID: 11400000, guid: 81e6b4ad007f15543a3cc6cd46115763, type: 2}
+  - position: {x: -6, y: 4}
+    tile: {fileID: 11400000, guid: 9a157a016f2fdd6459c0ffb8bd8c77a6, type: 2}
+  - position: {x: -5, y: 4}
+    tile: {fileID: 11400000, guid: 9a157a016f2fdd6459c0ffb8bd8c77a6, type: 2}
+  - position: {x: -4, y: 4}
+    tile: {fileID: 11400000, guid: 9a157a016f2fdd6459c0ffb8bd8c77a6, type: 2}
+  - position: {x: -3, y: 4}
+    tile: {fileID: 11400000, guid: 9a157a016f2fdd6459c0ffb8bd8c77a6, type: 2}
+  - position: {x: -2, y: 4}
+    tile: {fileID: 11400000, guid: 5275ed2acf9cac04bb882c5b9d479ec9, type: 2}
+  - position: {x: -1, y: 4}
+    tile: {fileID: 0}
+  - position: {x: 0, y: 4}
+    tile: {fileID: 0}
+  - position: {x: 1, y: 4}
+    tile: {fileID: 11400000, guid: 2da4fe96fe4962547b1911a719d648b1, type: 2}
+  - position: {x: 2, y: 4}
+    tile: {fileID: 11400000, guid: 9a157a016f2fdd6459c0ffb8bd8c77a6, type: 2}
+  - position: {x: 3, y: 4}
+    tile: {fileID: 11400000, guid: 9a157a016f2fdd6459c0ffb8bd8c77a6, type: 2}
+  - position: {x: 4, y: 4}
+    tile: {fileID: 11400000, guid: 9a157a016f2fdd6459c0ffb8bd8c77a6, type: 2}
+  - position: {x: 5, y: 4}
+    tile: {fileID: 11400000, guid: 9a157a016f2fdd6459c0ffb8bd8c77a6, type: 2}
+  - position: {x: 6, y: 4}
+    tile: {fileID: 11400000, guid: f6a71489e1d4eae43b32d08084badf5f, type: 2}
+  - position: {x: -7, y: 5}
+    tile: {fileID: 11400000, guid: 81e6b4ad007f15543a3cc6cd46115763, type: 2}
+  - position: {x: -6, y: 5}
+    tile: {fileID: 11400000, guid: 50a6079418be79f4fa068fdfaee050f5, type: 2}
+  - position: {x: -5, y: 5}
+    tile: {fileID: 11400000, guid: 50a6079418be79f4fa068fdfaee050f5, type: 2}
+  - position: {x: -4, y: 5}
+    tile: {fileID: 11400000, guid: 50a6079418be79f4fa068fdfaee050f5, type: 2}
+  - position: {x: -3, y: 5}
+    tile: {fileID: 11400000, guid: 50a6079418be79f4fa068fdfaee050f5, type: 2}
+  - position: {x: -2, y: 5}
+    tile: {fileID: 11400000, guid: c366d335cf4e17946b2291cda470efc2, type: 2}
+  - position: {x: -1, y: 5}
+    tile: {fileID: 0}
+  - position: {x: 0, y: 5}
+    tile: {fileID: 0}
+  - position: {x: 1, y: 5}
+    tile: {fileID: 11400000, guid: c366d335cf4e17946b2291cda470efc2, type: 2}
+  - position: {x: 2, y: 5}
+    tile: {fileID: 11400000, guid: 50a6079418be79f4fa068fdfaee050f5, type: 2}
+  - position: {x: 3, y: 5}
+    tile: {fileID: 11400000, guid: 50a6079418be79f4fa068fdfaee050f5, type: 2}
+  - position: {x: 4, y: 5}
+    tile: {fileID: 11400000, guid: 50a6079418be79f4fa068fdfaee050f5, type: 2}
+  - position: {x: 5, y: 5}
+    tile: {fileID: 11400000, guid: 50a6079418be79f4fa068fdfaee050f5, type: 2}
+  - position: {x: 6, y: 5}
+    tile: {fileID: 11400000, guid: f6a71489e1d4eae43b32d08084badf5f, type: 2}
+  - position: {x: -7, y: 6}
+    tile: {fileID: 11400000, guid: c5d89f50b4c02ff4c999ed73728f567c, type: 2}
+  - position: {x: -6, y: 6}
+    tile: {fileID: 11400000, guid: 9c7d51d0668569b43addba0cb47ed28b, type: 2}
+  - position: {x: -5, y: 6}
+    tile: {fileID: 11400000, guid: 9c7d51d0668569b43addba0cb47ed28b, type: 2}
+  - position: {x: -4, y: 6}
+    tile: {fileID: 11400000, guid: 9c7d51d0668569b43addba0cb47ed28b, type: 2}
+  - position: {x: -3, y: 6}
+    tile: {fileID: 11400000, guid: 9c7d51d0668569b43addba0cb47ed28b, type: 2}
+  - position: {x: -2, y: 6}
+    tile: {fileID: 11400000, guid: 839f2b052300bba419eec7d9969d2ab6, type: 2}
+  - position: {x: -1, y: 6}
+    tile: {fileID: 0}
+  - position: {x: 0, y: 6}
+    tile: {fileID: 0}
+  - position: {x: 1, y: 6}
+    tile: {fileID: 11400000, guid: bc7691bfa1de940408eab43c20eed420, type: 2}
+  - position: {x: 2, y: 6}
+    tile: {fileID: 11400000, guid: 9c7d51d0668569b43addba0cb47ed28b, type: 2}
+  - position: {x: 3, y: 6}
+    tile: {fileID: 11400000, guid: 9c7d51d0668569b43addba0cb47ed28b, type: 2}
+  - position: {x: 4, y: 6}
+    tile: {fileID: 11400000, guid: 9c7d51d0668569b43addba0cb47ed28b, type: 2}
+  - position: {x: 5, y: 6}
+    tile: {fileID: 11400000, guid: 9c7d51d0668569b43addba0cb47ed28b, type: 2}
+  - position: {x: 6, y: 6}
+    tile: {fileID: 11400000, guid: c30bcf87b0103df44bcaaea2a00745a5, type: 2}
+  passableWallTiles:
+  - position: {x: -7, y: -5}
+    tile: {fileID: 0}
+  - position: {x: -6, y: -5}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: -5, y: -5}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: -4, y: -5}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: -3, y: -5}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: -2, y: -5}
+    tile: {fileID: 11400000, guid: 81e6b4ad007f15543a3cc6cd46115763, type: 2}
+  - position: {x: -1, y: -5}
+    tile: {fileID: 0}
+  - position: {x: 0, y: -5}
+    tile: {fileID: 0}
+  - position: {x: 1, y: -5}
+    tile: {fileID: 11400000, guid: f6a71489e1d4eae43b32d08084badf5f, type: 2}
+  - position: {x: 2, y: -5}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: 3, y: -5}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: 4, y: -5}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: 5, y: -5}
+    tile: {fileID: 11400000, guid: 50dd42bf87c8bd94cac0c528a0025b02, type: 2}
+  - position: {x: 6, y: -5}
+    tile: {fileID: 0}
+  - position: {x: -7, y: -4}
+    tile: {fileID: 0}
+  - position: {x: -6, y: -4}
+    tile: {fileID: 11400000, guid: 54e19af1601f7a24b9e72399da2dfae3, type: 2}
+  - position: {x: -5, y: -4}
+    tile: {fileID: 11400000, guid: 54e19af1601f7a24b9e72399da2dfae3, type: 2}
+  - position: {x: -4, y: -4}
+    tile: {fileID: 11400000, guid: 54e19af1601f7a24b9e72399da2dfae3, type: 2}
+  - position: {x: -3, y: -4}
+    tile: {fileID: 11400000, guid: 54e19af1601f7a24b9e72399da2dfae3, type: 2}
+  - position: {x: -2, y: -4}
+    tile: {fileID: 11400000, guid: a3410a966a654804c9ac82a829df047b, type: 2}
+  - position: {x: -1, y: -4}
+    tile: {fileID: 0}
+  - position: {x: 0, y: -4}
+    tile: {fileID: 0}
+  - position: {x: 1, y: -4}
+    tile: {fileID: 11400000, guid: 4c7e209348fd48944848b00f79e6c3c7, type: 2}
+  - position: {x: 2, y: -4}
+    tile: {fileID: 11400000, guid: 54e19af1601f7a24b9e72399da2dfae3, type: 2}
+  - position: {x: 3, y: -4}
+    tile: {fileID: 11400000, guid: 54e19af1601f7a24b9e72399da2dfae3, type: 2}
+  - position: {x: 4, y: -4}
+    tile: {fileID: 11400000, guid: 54e19af1601f7a24b9e72399da2dfae3, type: 2}
+  - position: {x: 5, y: -4}
+    tile: {fileID: 11400000, guid: 54e19af1601f7a24b9e72399da2dfae3, type: 2}
+  - position: {x: 6, y: -4}
+    tile: {fileID: 0}
+  - position: {x: -7, y: -3}
+    tile: {fileID: 0}
+  - position: {x: -6, y: -3}
+    tile: {fileID: 0}
+  - position: {x: -5, y: -3}
+    tile: {fileID: 0}
+  - position: {x: -4, y: -3}
+    tile: {fileID: 0}
+  - position: {x: -3, y: -3}
+    tile: {fileID: 0}
+  - position: {x: -2, y: -3}
+    tile: {fileID: 11400000, guid: 3c3ec5fa5322a314eb4e8875eea7edbf, type: 2}
+  - position: {x: -1, y: -3}
+    tile: {fileID: 11400000, guid: b997797e423f3244a8a6ec2d47bb81ff, type: 2}
+  - position: {x: 0, y: -3}
+    tile: {fileID: 11400000, guid: 41a9934be0614b44b8c69d17a38cb861, type: 2}
+  - position: {x: 1, y: -3}
+    tile: {fileID: 11400000, guid: 85ea5d3bdb6abfb4897b23166453f67a, type: 2}
+  - position: {x: 2, y: -3}
+    tile: {fileID: 0}
+  - position: {x: 3, y: -3}
+    tile: {fileID: 0}
+  - position: {x: 4, y: -3}
+    tile: {fileID: 0}
+  - position: {x: 5, y: -3}
+    tile: {fileID: 0}
+  - position: {x: 6, y: -3}
+    tile: {fileID: 0}
+  - position: {x: -7, y: -2}
+    tile: {fileID: 11400000, guid: c1b48e5583fdb9140807a1f06bdbd62e, type: 2}
+  - position: {x: -6, y: -2}
+    tile: {fileID: 0}
+  - position: {x: -5, y: -2}
+    tile: {fileID: 0}
+  - position: {x: -4, y: -2}
+    tile: {fileID: 0}
+  - position: {x: -3, y: -2}
+    tile: {fileID: 0}
+  - position: {x: -2, y: -2}
+    tile: {fileID: 0}
+  - position: {x: -1, y: -2}
+    tile: {fileID: 0}
+  - position: {x: 0, y: -2}
+    tile: {fileID: 0}
+  - position: {x: 1, y: -2}
+    tile: {fileID: 0}
+  - position: {x: 2, y: -2}
+    tile: {fileID: 0}
+  - position: {x: 3, y: -2}
+    tile: {fileID: 0}
+  - position: {x: 4, y: -2}
+    tile: {fileID: 0}
+  - position: {x: 5, y: -2}
+    tile: {fileID: 0}
+  - position: {x: 6, y: -2}
+    tile: {fileID: 11400000, guid: f6a71489e1d4eae43b32d08084badf5f, type: 2}
+  - position: {x: -7, y: -1}
+    tile: {fileID: 11400000, guid: 81e6b4ad007f15543a3cc6cd46115763, type: 2}
+  - position: {x: -6, y: -1}
+    tile: {fileID: 0}
+  - position: {x: -5, y: -1}
+    tile: {fileID: 0}
+  - position: {x: -4, y: -1}
+    tile: {fileID: 0}
+  - position: {x: -3, y: -1}
+    tile: {fileID: 0}
+  - position: {x: -2, y: -1}
+    tile: {fileID: 0}
+  - position: {x: -1, y: -1}
+    tile: {fileID: 0}
+  - position: {x: 0, y: -1}
+    tile: {fileID: 0}
+  - position: {x: 1, y: -1}
+    tile: {fileID: 0}
+  - position: {x: 2, y: -1}
+    tile: {fileID: 0}
+  - position: {x: 3, y: -1}
+    tile: {fileID: 0}
+  - position: {x: 4, y: -1}
+    tile: {fileID: 0}
+  - position: {x: 5, y: -1}
+    tile: {fileID: 0}
+  - position: {x: 6, y: -1}
+    tile: {fileID: 11400000, guid: ba79b4ec4f45ece4d9b22270a5fadd88, type: 2}
+  - position: {x: -7, y: 0}
+    tile: {fileID: 11400000, guid: 27a8168e0731c374f9593ea6a773db62, type: 2}
+  - position: {x: -6, y: 0}
+    tile: {fileID: 0}
+  - position: {x: -5, y: 0}
+    tile: {fileID: 0}
+  - position: {x: -4, y: 0}
+    tile: {fileID: 0}
+  - position: {x: -3, y: 0}
+    tile: {fileID: 0}
+  - position: {x: -2, y: 0}
+    tile: {fileID: 0}
+  - position: {x: -1, y: 0}
+    tile: {fileID: 0}
+  - position: {x: 0, y: 0}
+    tile: {fileID: 0}
+  - position: {x: 1, y: 0}
+    tile: {fileID: 0}
+  - position: {x: 2, y: 0}
+    tile: {fileID: 0}
+  - position: {x: 3, y: 0}
+    tile: {fileID: 0}
+  - position: {x: 4, y: 0}
+    tile: {fileID: 0}
+  - position: {x: 5, y: 0}
+    tile: {fileID: 0}
+  - position: {x: 6, y: 0}
+    tile: {fileID: 11400000, guid: d903a4d18a6b19845b6d76b195e6729b, type: 2}
+  - position: {x: -7, y: 1}
+    tile: {fileID: 0}
+  - position: {x: -6, y: 1}
+    tile: {fileID: 0}
+  - position: {x: -5, y: 1}
+    tile: {fileID: 0}
+  - position: {x: -4, y: 1}
+    tile: {fileID: 0}
+  - position: {x: -3, y: 1}
+    tile: {fileID: 0}
+  - position: {x: -2, y: 1}
+    tile: {fileID: 0}
+  - position: {x: -1, y: 1}
+    tile: {fileID: 0}
+  - position: {x: 0, y: 1}
+    tile: {fileID: 0}
+  - position: {x: 1, y: 1}
+    tile: {fileID: 0}
+  - position: {x: 2, y: 1}
+    tile: {fileID: 0}
+  - position: {x: 3, y: 1}
+    tile: {fileID: 0}
+  - position: {x: 4, y: 1}
+    tile: {fileID: 0}
+  - position: {x: 5, y: 1}
+    tile: {fileID: 0}
+  - position: {x: 6, y: 1}
+    tile: {fileID: 0}
+  - position: {x: -7, y: 2}
+    tile: {fileID: 0}
+  - position: {x: -6, y: 2}
+    tile: {fileID: 0}
+  - position: {x: -5, y: 2}
+    tile: {fileID: 0}
+  - position: {x: -4, y: 2}
+    tile: {fileID: 0}
+  - position: {x: -3, y: 2}
+    tile: {fileID: 0}
+  - position: {x: -2, y: 2}
+    tile: {fileID: 0}
+  - position: {x: -1, y: 2}
+    tile: {fileID: 0}
+  - position: {x: 0, y: 2}
+    tile: {fileID: 0}
+  - position: {x: 1, y: 2}
+    tile: {fileID: 0}
+  - position: {x: 2, y: 2}
+    tile: {fileID: 0}
+  - position: {x: 3, y: 2}
+    tile: {fileID: 0}
+  - position: {x: 4, y: 2}
+    tile: {fileID: 0}
+  - position: {x: 5, y: 2}
+    tile: {fileID: 0}
+  - position: {x: 6, y: 2}
+    tile: {fileID: 0}
+  - position: {x: -7, y: 3}
+    tile: {fileID: 0}
+  - position: {x: -6, y: 3}
+    tile: {fileID: 0}
+  - position: {x: -5, y: 3}
+    tile: {fileID: 0}
+  - position: {x: -4, y: 3}
+    tile: {fileID: 0}
+  - position: {x: -3, y: 3}
+    tile: {fileID: 0}
+  - position: {x: -2, y: 3}
+    tile: {fileID: 0}
+  - position: {x: -1, y: 3}
+    tile: {fileID: 0}
+  - position: {x: 0, y: 3}
+    tile: {fileID: 0}
+  - position: {x: 1, y: 3}
+    tile: {fileID: 0}
+  - position: {x: 2, y: 3}
+    tile: {fileID: 0}
+  - position: {x: 3, y: 3}
+    tile: {fileID: 0}
+  - position: {x: 4, y: 3}
+    tile: {fileID: 0}
+  - position: {x: 5, y: 3}
+    tile: {fileID: 0}
+  - position: {x: 6, y: 3}
+    tile: {fileID: 0}
+  - position: {x: -7, y: 4}
+    tile: {fileID: 0}
+  - position: {x: -6, y: 4}
+    tile: {fileID: 0}
+  - position: {x: -5, y: 4}
+    tile: {fileID: 0}
+  - position: {x: -4, y: 4}
+    tile: {fileID: 0}
+  - position: {x: -3, y: 4}
+    tile: {fileID: 0}
+  - position: {x: -2, y: 4}
+    tile: {fileID: 0}
+  - position: {x: -1, y: 4}
+    tile: {fileID: 0}
+  - position: {x: 0, y: 4}
+    tile: {fileID: 0}
+  - position: {x: 1, y: 4}
+    tile: {fileID: 0}
+  - position: {x: 2, y: 4}
+    tile: {fileID: 0}
+  - position: {x: 3, y: 4}
+    tile: {fileID: 0}
+  - position: {x: 4, y: 4}
+    tile: {fileID: 0}
+  - position: {x: 5, y: 4}
+    tile: {fileID: 0}
+  - position: {x: 6, y: 4}
+    tile: {fileID: 0}
+  - position: {x: -7, y: 5}
+    tile: {fileID: 0}
+  - position: {x: -6, y: 5}
+    tile: {fileID: 0}
+  - position: {x: -5, y: 5}
+    tile: {fileID: 0}
+  - position: {x: -4, y: 5}
+    tile: {fileID: 0}
+  - position: {x: -3, y: 5}
+    tile: {fileID: 0}
+  - position: {x: -2, y: 5}
+    tile: {fileID: 0}
+  - position: {x: -1, y: 5}
+    tile: {fileID: 0}
+  - position: {x: 0, y: 5}
+    tile: {fileID: 0}
+  - position: {x: 1, y: 5}
+    tile: {fileID: 0}
+  - position: {x: 2, y: 5}
+    tile: {fileID: 0}
+  - position: {x: 3, y: 5}
+    tile: {fileID: 0}
+  - position: {x: 4, y: 5}
+    tile: {fileID: 0}
+  - position: {x: 5, y: 5}
+    tile: {fileID: 0}
+  - position: {x: 6, y: 5}
+    tile: {fileID: 0}
+  - position: {x: -7, y: 6}
+    tile: {fileID: 0}
+  - position: {x: -6, y: 6}
+    tile: {fileID: 0}
+  - position: {x: -5, y: 6}
+    tile: {fileID: 0}
+  - position: {x: -4, y: 6}
+    tile: {fileID: 0}
+  - position: {x: -3, y: 6}
+    tile: {fileID: 0}
+  - position: {x: -2, y: 6}
+    tile: {fileID: 0}
+  - position: {x: -1, y: 6}
+    tile: {fileID: 0}
+  - position: {x: 0, y: 6}
+    tile: {fileID: 0}
+  - position: {x: 1, y: 6}
+    tile: {fileID: 0}
+  - position: {x: 2, y: 6}
+    tile: {fileID: 0}
+  - position: {x: 3, y: 6}
+    tile: {fileID: 0}
+  - position: {x: 4, y: 6}
+    tile: {fileID: 0}
+  - position: {x: 5, y: 6}
+    tile: {fileID: 0}
+  - position: {x: 6, y: 6}
+    tile: {fileID: 0}
+  - position: {x: -7, y: 7}
+    tile: {fileID: 0}
+  - position: {x: -6, y: 7}
+    tile: {fileID: 0}
+  - position: {x: -5, y: 7}
+    tile: {fileID: 0}
+  - position: {x: -4, y: 7}
+    tile: {fileID: 0}
+  - position: {x: -3, y: 7}
+    tile: {fileID: 0}
+  - position: {x: -2, y: 7}
+    tile: {fileID: 11400000, guid: 3c3ec5fa5322a314eb4e8875eea7edbf, type: 2}
+  - position: {x: -1, y: 7}
+    tile: {fileID: 11400000, guid: b997797e423f3244a8a6ec2d47bb81ff, type: 2}
+  - position: {x: 0, y: 7}
+    tile: {fileID: 11400000, guid: 41a9934be0614b44b8c69d17a38cb861, type: 2}
+  - position: {x: 1, y: 7}
+    tile: {fileID: 11400000, guid: 85ea5d3bdb6abfb4897b23166453f67a, type: 2}
+  - position: {x: 2, y: 7}
+    tile: {fileID: 0}
+  - position: {x: 3, y: 7}
+    tile: {fileID: 0}
+  - position: {x: 4, y: 7}
+    tile: {fileID: 0}
+  - position: {x: 5, y: 7}
+    tile: {fileID: 0}
+  - position: {x: 6, y: 7}
+    tile: {fileID: 0}
+  floorTilesArray: []
+  wallTilesArray: []
+  doors: []
