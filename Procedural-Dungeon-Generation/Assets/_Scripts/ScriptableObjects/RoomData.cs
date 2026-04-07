@@ -11,6 +11,7 @@ public class RoomData : ScriptableObject
     public List<TileData> wallTiles = new List<TileData>();
     public List<TileData> passableWallTiles = new List<TileData>();
 
+    public bool doorUp, doorDown, doorLeft, doorRight;
 
     public TileBase[] floorTilesArray;     // array pla: y * width + x
     public TileBase[] wallTilesArray;

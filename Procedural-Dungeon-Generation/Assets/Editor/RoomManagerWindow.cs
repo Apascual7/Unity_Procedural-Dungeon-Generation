@@ -49,7 +49,7 @@ public class RoomManagerWindow : EditorWindow
     {
         if (_floorTilemap == null || _wallTilemap == null || _passableWallTilemap == null)
         {
-            Debug.LogError("Tilemaps are Null");
+            Debug.LogError("ROOM EXPORTER: One or more of the Tilemaps are Null");
             return;
         }
 
@@ -74,6 +74,14 @@ public class RoomManagerWindow : EditorWindow
         foreach (var position in wallBounds.allPositionsWithin)
         {
             room.wallTiles.Add(new TileData(new Vector2Int(position.x, position.y), _wallTilemap.GetTile(position)));
+
+            if (_wallTilemap.GetTile(position) == null)
+            {
+                if (position.y == wallBounds.yMax - 1) room.doorUp = true;
+                if (position.y == wallBounds.yMin) room.doorDown = true;
+                if (position.x == wallBounds.xMin) room.doorLeft = true;
+                if (position.x == wallBounds.xMax - 1) room.doorRight = true;
+            }
         }
         foreach (var position in passableWallBounds.allPositionsWithin)
         {
@@ -84,11 +92,15 @@ public class RoomManagerWindow : EditorWindow
         AssetDatabase.CreateAsset(room, path);
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
-        Debug.Log($"Sala exportada a {path}");
+        Debug.Log($"ROOM EXPORTER: Room Exported to: {path}");
     }
 
     void ShowRoom()
     {
+        _floorTilemap.ClearAllTiles();
+        _wallTilemap.ClearAllTiles();
+        _passableWallTilemap.ClearAllTiles();
+
         foreach (var tile in _roomToShow.floorTiles)
         {
             var tilePosition = _floorTilemap.WorldToCell((Vector3Int)tile.position);
@@ -105,6 +117,6 @@ public class RoomManagerWindow : EditorWindow
             _passableWallTilemap.SetTile(tilePosition, tile.tile);
         }
 
-        Debug.Log($"Sala mostrada");
+        Debug.Log($"ROOM EXPORTER: Room displayed. Doors: Up ({_roomToShow.doorUp}), Down ({_roomToShow.doorDown}), Left ({_roomToShow.doorLeft}), Right ({_roomToShow.doorRight})");
     }
 }
