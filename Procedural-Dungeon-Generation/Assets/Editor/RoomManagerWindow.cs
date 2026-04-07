@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -66,33 +68,57 @@ public class RoomManagerWindow : EditorWindow
 
         var room = CreateInstance<RoomData>();
         room.size = new Vector2Int(width, height);
+        room.floorTiles = FillTileData(floorBounds, _floorTilemap);
+        room.passableWallTiles = FillTileData(passableWallBounds, _passableWallTilemap);
 
-        foreach (var position in floorBounds.allPositionsWithin)
-        {
-            room.floorTiles.Add(new TileData(new Vector2Int(position.x, position.y), _floorTilemap.GetTile(position)));
-        }
+        List<Direction> doorsDirections = new List<Direction>();
         foreach (var position in wallBounds.allPositionsWithin)
         {
             room.wallTiles.Add(new TileData(new Vector2Int(position.x, position.y), _wallTilemap.GetTile(position)));
 
             if (_wallTilemap.GetTile(position) == null)
             {
-                if (position.y == wallBounds.yMax - 1) room.doorUp = true;
-                if (position.y == wallBounds.yMin) room.doorDown = true;
-                if (position.x == wallBounds.xMin) room.doorLeft = true;
-                if (position.x == wallBounds.xMax - 1) room.doorRight = true;
+                if (position.y == wallBounds.yMax - 1 && !doorsDirections.Contains(Direction.Top))
+                {
+                    doorsDirections.Add(Direction.Top);
+                }
+
+                if (position.y == wallBounds.yMin && !doorsDirections.Contains(Direction.Bottom))
+                {
+                    doorsDirections.Add(Direction.Bottom);
+                }
+
+                if (position.x == wallBounds.xMin && !doorsDirections.Contains(Direction.Left))
+                {
+                    doorsDirections.Add(Direction.Left);
+                }
+
+                if (position.x == wallBounds.xMax - 1 && !doorsDirections.Contains(Direction.Right))
+                {
+                    doorsDirections.Add(Direction.Right);
+                }
             }
         }
-        foreach (var position in passableWallBounds.allPositionsWithin)
+        foreach (var direction in doorsDirections)
         {
-            room.passableWallTiles.Add(new TileData(new Vector2Int(position.x, position.y), _passableWallTilemap.GetTile(position)));
+            room.doors.Add(new DoorData(direction, room));
         }
 
-        string path = $"Assets/_Scripts/aaa/{_newRoomName}.asset";
+        string path = $"Assets/_Scripts/ScriptableObjects/{_newRoomName}.asset";
         AssetDatabase.CreateAsset(room, path);
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
         Debug.Log($"ROOM EXPORTER: Room Exported to: {path}");
+    }
+
+    private List<TileData> FillTileData(BoundsInt bounds, Tilemap tilemap)
+    {
+        List<TileData> tiles = new List<TileData>();
+        foreach (var position in bounds.allPositionsWithin)
+        {
+            tiles.Add(new TileData(new Vector2Int(position.x, position.y), tilemap.GetTile(position)));
+        }
+        return tiles;
     }
 
     void ShowRoom()
@@ -117,6 +143,6 @@ public class RoomManagerWindow : EditorWindow
             _passableWallTilemap.SetTile(tilePosition, tile.tile);
         }
 
-        Debug.Log($"ROOM EXPORTER: Room displayed. Doors: Up ({_roomToShow.doorUp}), Down ({_roomToShow.doorDown}), Left ({_roomToShow.doorLeft}), Right ({_roomToShow.doorRight})");
+        Debug.Log($"ROOM EXPORTER: Room '{_roomToShow.name}' displayed. Doors {_roomToShow.doors.Count}");
     }
 }

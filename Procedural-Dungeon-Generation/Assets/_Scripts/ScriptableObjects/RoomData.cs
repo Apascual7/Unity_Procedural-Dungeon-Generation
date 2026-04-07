@@ -10,12 +10,10 @@ public class RoomData : ScriptableObject
     public List<TileData> floorTiles = new List<TileData>();
     public List<TileData> wallTiles = new List<TileData>();
     public List<TileData> passableWallTiles = new List<TileData>();
-
-    public bool doorUp, doorDown, doorLeft, doorRight;
+    public List<DoorData> doors = new List<DoorData>();
 
     public TileBase[] floorTilesArray;     // array pla: y * width + x
     public TileBase[] wallTilesArray;
-    public DoorData[] doors;          // posició + direcció de cada porta
 }
 
 [System.Serializable]
@@ -32,10 +30,73 @@ public struct TileData
 }
 
 [System.Serializable]
-public class DoorData
+public struct DoorData
 {
-    public Vector2Int tilePosition;
     public Direction direction;
+    public RoomData room;
+
+    public DoorData(Direction direction, RoomData room)
+    {
+        this.direction = direction;
+        this.room = room;
+    }
 }
 
-public enum Direction { North, South, East, West }
+public enum Direction { Top, Bottom, Left, Right }
+
+public static class DirectionHelper
+{
+    public static Direction GetOposite(Direction direction)
+    {
+        switch (direction)
+        {
+            case Direction.Top:
+                return Direction.Bottom;
+
+            case Direction.Bottom:
+                return Direction.Top;
+
+            case Direction.Left:
+                return Direction.Right;
+
+            case Direction.Right:
+                return Direction.Left;
+
+            default:
+                Debug.LogError("DIRECTION HELPER: Invalid direction provided.");
+                return direction;
+        }
+    }
+
+    public static Vector2Int GetDirectionVector(Direction direction)
+    {
+        switch (direction)
+        {
+            case Direction.Top:
+                return Vector2Int.up;
+
+            case Direction.Bottom:
+                return Vector2Int.down;
+
+            case Direction.Left:
+                return Vector2Int.left;
+
+            case Direction.Right:
+                return Vector2Int.right;
+
+            default:
+                Debug.LogError("DIRECTION HELPER: Invalid direction provided.");
+                return Vector2Int.zero;
+        }
+    }
+}
+
+public class RoomConnection
+{
+    public readonly DoorData[] connectedDoors;
+
+    public RoomConnection(DoorData door1, DoorData door2)
+    {
+        connectedDoors = new[] { door1, door2 };
+    }
+}
